@@ -1,0 +1,19 @@
+$colors: (
+  "primary": $primary,
+  "primary-dark": $primary-dark,
+  "light": $light,
+  "white": $white,
+  "black": $black
+);
+
+@each $colorName, $color in $colors {
+  .color-#{$colorName} {
+    color: $color;
+  }
+}
+
+@each $colorName, $color in $colors {
+  .background-color-#{$colorName} {
+    background-color: $color;
+  }
+}

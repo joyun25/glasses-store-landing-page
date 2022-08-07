@@ -1,0 +1,12 @@
+// RWD
+@mixin pad {
+  @media (max-width: 992px) {
+      @content;
+  }
+}
+
+@mixin phone {
+  @media (max-width: 576px) {
+      @content;
+  }
+}

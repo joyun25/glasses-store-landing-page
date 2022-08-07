@@ -1,0 +1,353 @@
+// margin
+@for $i from 0 through 10 {
+  .mt-#{$i} {
+    margin-top: $spacing-base*$i;
+  }
+}
+
+@for $i from 0 through 10 {
+  .mb-#{$i} {
+    margin-bottom: $spacing-base*$i;
+  }
+}
+
+@for $i from 0 through 10 {
+  .my-#{$i} {
+    margin-bottom: $spacing-base*$i;
+    margin-top: $spacing-base*$i;
+  }
+}
+
+@for $i from 0 through 10 {
+  .ml-#{$i} {
+    margin-left: $spacing-base*$i;
+  }
+}
+
+@for $i from 0 through 10 {
+  .mr-#{$i} {
+    margin-right: $spacing-base*$i;
+  }
+}
+
+@for $i from 0 through 10 {
+  .mx-#{$i} {
+    margin-left: $spacing-base*$i;
+    margin-right: $spacing-base*$i;
+  }
+}
+
+@for $i from 0 through 10 {
+  .m-#{$i} {
+    margin: $spacing-base*$i;
+  }
+}
+
+// padding
+@for $i from 0 through 10 {
+  .pt-#{$i} {
+    padding-top: $spacing-base*$i;
+  }
+}
+
+@for $i from 0 through 10 {
+  .pb-#{$i} {
+    padding-bottom: $spacing-base*$i;
+  }
+}
+
+@for $i from 0 through 10 {
+  .py-#{$i} {
+    padding-bottom: $spacing-base*$i;
+    padding-top: $spacing-base*$i;
+  }
+}
+
+@for $i from 0 through 10 {
+  .pl-#{$i} {
+    padding-left: $spacing-base*$i;
+  }
+}
+
+@for $i from 0 through 10 {
+  .pr-#{$i} {
+    padding-right: $spacing-base*$i;
+  }
+}
+
+@for $i from 0 through 10 {
+  .px-#{$i} {
+    padding-left: $spacing-base*$i;
+    padding-right: $spacing-base*$i;
+  }
+}
+
+@for $i from 0 through 10 {
+  .p-#{$i} {
+    padding: $spacing-base*$i;
+  }
+}
+
+// customize
+// 1_5 means 1.5, 1.5*8=12
+.pt-1_5 {
+  padding-top: 12px;
+}
+
+.pb-1_5 {
+  padding-bottom: 12px;
+}
+
+.py-1_5 {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.pl-1_5 {
+  padding-left: 12px;
+}
+
+.pr-1_5 {
+  padding-right: 12px;
+}
+
+.px-1_5 {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+// margin
+@for $i from 0 through 10 {
+  .mt-md-#{$i} {
+    @include pad() {
+      margin-top: $spacing-base*$i;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  .mb-md-#{$i} {
+    @include pad() {
+      margin-bottom: $spacing-base*$i;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  .my-md-#{$i} {
+    @include pad() {
+      margin-bottom: $spacing-base*$i;
+      margin-top: $spacing-base*$i;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  .ml-md-#{$i} {
+    @include pad() {
+      margin-left: $spacing-base*$i;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  .mr-md-#{$i} {
+    @include pad() {
+      margin-right: $spacing-base*$i;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  .mx-md-#{$i} {
+    @include pad() {
+      margin-left: $spacing-base*$i;
+      margin-right: $spacing-base*$i;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  .m-md-#{$i} {
+    @include pad() {
+      margin: $spacing-base*$i;
+    }
+  }
+}
+
+// padding
+@for $i from 0 through 10 {
+  .pt-md-#{$i} {
+    @include pad() {
+      padding-top: $spacing-base*$i;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  .pb-md-#{$i} {
+    @include pad() {
+      padding-bottom: $spacing-base*$i;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  .py-md-#{$i} {
+    @include pad() {
+      padding-bottom: $spacing-base*$i;
+      padding-top: $spacing-base*$i;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  .pl-md-#{$i} {
+    @include pad() {
+      padding-left: $spacing-base*$i;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  .pr-md-#{$i} {
+    @include pad() {
+      padding-right: $spacing-base*$i;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  .px-md-#{$i} {
+    @include pad() {
+      padding-left: $spacing-base*$i;
+      padding-right: $spacing-base*$i;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  .p-md-#{$i} {
+    @include pad() {
+      padding: $spacing-base*$i;
+    }
+  }
+}
+
+// margin
+@for $i from 0 through 10 {
+  .mt-sm-#{$i} {
+    @include phone() {
+      margin-top: $spacing-base*$i;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  .mb-sm-#{$i} {
+    @include phone() {
+      margin-bottom: $spacing-base*$i;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  .my-sm-#{$i} {
+    @include phone() {
+      margin-bottom: $spacing-base*$i;
+      margin-top: $spacing-base*$i;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  .ml-sm-#{$i} {
+    @include phone() {
+      margin-left: $spacing-base*$i;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  .mr-sm-#{$i} {
+    @include phone() {
+      margin-right: $spacing-base*$i;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  .mx-sm-#{$i} {
+    @include phone() {
+      margin-left: $spacing-base*$i;
+      margin-right: $spacing-base*$i;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  .m-sm-#{$i} {
+    @include phone() {
+      margin: $spacing-base*$i;
+    }
+  }
+}
+
+// padding
+@for $i from 0 through 10 {
+  .pt-sm-#{$i} {
+    @include phone() {
+      padding-top: $spacing-base*$i;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  .pb-sm-#{$i} {
+    @include phone() {
+      padding-bottom: $spacing-base*$i;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  .py-sm-#{$i} {
+    @include phone() {
+      padding-bottom: $spacing-base*$i;
+      padding-top: $spacing-base*$i;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  .pl-sm-#{$i} {
+    @include phone() {
+      padding-left: $spacing-base*$i;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  .pr-sm-#{$i} {
+    @include phone() {
+      padding-right: $spacing-base*$i;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  .px-sm-#{$i} {
+    @include phone() {
+      padding-left: $spacing-base*$i;
+      padding-right: $spacing-base*$i;
+    }
+  }
+}
+
+@for $i from 0 through 10 {
+  .p-sm-#{$i} {
+    @include phone() {
+      padding: $spacing-base*$i;
+    }
+  }
+}
