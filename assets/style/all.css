@@ -2192,8 +2192,7 @@ a {
   width: 80px; }
 
 .header_menuIcon-phone {
-  width: 30px;
-  fill: #ffffff; }
+  width: 40px; }
 
 .footer_socialLink {
   width: 48px; }
@@ -2202,10 +2201,10 @@ a {
       width: 24px; } }
 
 .footer_addressLink {
-  width: 40px;
+  width: 48px;
   fill: #ffffff; }
   @media (max-width: 576px) {
     .footer_addressLink {
-      width: 20px; } }
+      width: 24px; } }
 
 /*# sourceMappingURL=all.css.map */
