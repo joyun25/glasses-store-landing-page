@@ -4,8 +4,7 @@
 }
 
 .header_menuIcon-phone {
-  width: 30px;
-  fill: $white;
+  width: 40px;
 }
 
 // footer
@@ -17,9 +16,9 @@
 }
 
 .footer_addressLink {
-  width: 40px;
+  width: 48px;
   fill: $white;
   @include phone() {
-    width: 20px;
+    width: 24px;
   }
 }
