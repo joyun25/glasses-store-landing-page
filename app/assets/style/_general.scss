@@ -1,6 +1,18 @@
 .container {
   max-width: 1320px;
   margin: 0 auto;
+  @include pad() {
+    max-width: 768px;
+  }
+}
+
+.container-small {
+  max-width: 660px;
+  margin: 0 auto;
+}
+
+.border-none {
+  border: none;
 }
 
 .border-white-1 {
@@ -9,4 +21,24 @@
 
 .border-bottom-white-1 {
   border-bottom: 1px solid $white;
+}
+
+.border-left-primary-8 {
+  border-left: 8px solid $primary;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.text-align-left {
+  text-align: left;
+}
+
+.text-align-right {
+  text-align: right;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }

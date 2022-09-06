@@ -88,32 +88,57 @@
   }
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.pt-12 {
+  padding-top: $spacing-base*12;
+}
+
+.px-22 {
+  padding-left: $spacing-base*22;
+  padding-right: $spacing-base*22;
+}
+
 // customize
 // 1_5 means 1.5, 1.5*8=12
+.mx-1_5 {
+  margin-left: $spacing-base*1.5;
+  margin-right: $spacing-base*1.5;
+}
+
 .pt-1_5 {
-  padding-top: 12px;
+  padding-top: $spacing-base*1.5;
 }
 
 .pb-1_5 {
-  padding-bottom: 12px;
+  padding-bottom: $spacing-base*1.5;
 }
 
 .py-1_5 {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: $spacing-base*1.5;
+  padding-bottom: $spacing-base*1.5;
 }
 
 .pl-1_5 {
-  padding-left: 12px;
+  padding-left: $spacing-base*1.5;
 }
 
 .pr-1_5 {
-  padding-right: 12px;
+  padding-right: $spacing-base*1.5;
 }
 
 .px-1_5 {
-  padding-left: 12px;
-  padding-right: 12px;
+  padding-left: $spacing-base*1.5;
+  padding-right: $spacing-base*1.5;
+}
+
+// 0_75 means 0.75, 0.75*8=6
+.py-0_75 {
+  padding-top: $spacing-base*0.75;
+  padding-bottom: $spacing-base*0.75;
 }
 
 // margin
@@ -234,6 +259,16 @@
   }
 }
 
+// customize
+
+// 4_5 means 4.5, 4.5*8=36
+.px-md-4_5 {
+  @include pad() {
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+}
+
 // margin
 @for $i from 0 through 10 {
   .mt-sm-#{$i} {
@@ -293,6 +328,13 @@
   }
 }
 
+.mx-sm-auto {
+  @include phone() {
+    margin-left: auto;
+    margin-right: auto;
+  } 
+}
+
 // padding
 @for $i from 0 through 10 {
   .pt-sm-#{$i} {
@@ -349,5 +391,12 @@
     @include phone() {
       padding: $spacing-base*$i;
     }
+  }
+}
+
+.px-sm-1_5 {
+  @include phone() {
+    padding-left: $spacing-base*1.5;
+    padding-right: $spacing-base*1.5;
   }
 }

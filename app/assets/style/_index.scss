@@ -1,0 +1,67 @@
+.index_banner {
+  height: 787px;
+  background-image: url("../images/home-header.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  @include pad() {
+    background-image: url("../images/home-header-sm.png");
+  }
+  @include phone() {
+    height: 396px;
+  }
+}
+
+.index_intro_img {
+  width: 100px;
+}
+
+.index_classic_card {
+  @include pad() {
+    max-width: 336px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @include phone() {
+    max-width: none;
+  }
+}
+
+.index_jointDesign {
+  background-image: url("../images/index-bg.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  @include pad() {
+    background-image: url("../images/index-bg-md.png");
+  }
+}
+
+.index_comment {
+  box-shadow: 0 2px 6px #00000030;
+  @include pad() {
+    max-width: 336px;
+  }
+  @include phone() {
+    max-width: none;
+  }
+}
+
+.index_comment_text {
+  height: 205px;
+}
+
+.index_comment_text_date {
+  color: #707070
+}
+
+.index_input,
+.index_textarea {
+  padding: 6px 12px;
+  box-shadow: none;
+  border: 1px solid #000;
+}
+
+.index_textarea {
+  height: 136px;
+}

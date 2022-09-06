@@ -1,5 +1,5 @@
 @import "variables";
-@import "reset";
+@import "base";
 @import "mixin";
 @import "fonts";
 @import "spacing";
@@ -8,6 +8,8 @@
 @import "sizes";
 @import "general";
 @import "layout";
+@import "index";
+@import "questions";
 
-
+// debug
 // *{outline:1px solid green;}
